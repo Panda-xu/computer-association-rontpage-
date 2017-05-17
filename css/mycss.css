@@ -1,0 +1,49 @@
+.p1{
+}
+.p2{
+    padding-left: 2em;
+}
+.join_img{
+    height:347px;
+    width:632px;
+    overflow:hidden;
+}
+.join_img img{
+    animation: ain_scale 1s infinite alternate;
+}
+@keyframes ain_scale{
+    0%{
+        transform:scale(1, 1);
+    }
+    100%{
+        transform:scale(1.1, 1.1);
+    }
+}
+.hezuo_img{
+    height:240px;
+    width:384px;
+    position: relative;
+    overflow: hidden;
+}
+.hezuo_img div{
+    height:240px;
+    width:384px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.5);
+    transform:scale(0,0) rotate(0deg);
+    transition:all 0.8s;
+    color: #fff;
+}
+.hezuo_img div p{
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height:48px;
+    padding-left: 2em;
+}
+.hezuo_img:hover div{
+    transform:scale(1,1) rotate(720deg);
+}
